@@ -45,3 +45,16 @@ input{
    font-family: cursive;
    font-weight: bolder;
 }
+.choice{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.btn {
+   background-color: aqua;
+   border: aqua;
+   height: 3rem;
+   font-size:1.1rem;
+   border-radius: 1rem;
+   font-family: cursive;
+}
