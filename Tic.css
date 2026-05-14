@@ -1,12 +1,47 @@
+*{
+    background-color:#0A192F;
+}
+
 .main-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px 100px 100px;
-    margin: 8rem;
+    margin: 10%;
+    box-shadow: 5px 2px 12px 6px black;
+    width: 70%;
+    height: 70%;
+    
 }
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid ;
+}
+input{
+    height: 100%;
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+    color: aqua;
+    font-weight: bolder;
+    border: 2px solid white;
+}
+#result{
+    grid-column: 1/4;
+    color: white;
+    font-family: cursive;
+    text-align: center;
+}
+
+#btn{
+   grid-column: 2/2;
+   height: 3rem;
+   margin: 1rem;
+   background-color: aqua;
+   border: aqua;
+   border-radius: 2rem;
+   width: 80%;
+   font-size:1.2rem;
+   font-family: cursive;
+   font-weight: bolder;
 }
