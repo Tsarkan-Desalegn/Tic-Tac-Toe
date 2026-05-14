@@ -10,34 +10,41 @@ const ninethInput  = document.getElementById("nineth-element");
 const result  = document.getElementById("result");
 const btn  = document.getElementById("btn");
 
+
+
+
+
+btn.addEventListener("click", ()=>{
+
  let matrix = [[firstInput.value, secondInput.value, thirdInput.value],
                  [fourthInput.value, fifthInput.value, sixthInput.value],
                  [ seventhInput.value,  eighthInput.value,ninethInput.value]];
 
-
-btn.addEventListener("click", ()=>{
+function announceWinner(player) {
+  result.textContent = "🎉 Congratulations! Player " + player + " has won the game!";
+}
 for(let i=0; i<3; ++i){
 if(matrix[i][0] === matrix[i][1] && matrix[i][1] ===matrix[i][2]){
-  result.textContent = matrix[i][0]+ "you won the titile man ";
+announceWinner(matrix[i][0]);
   return;
 }
 }
 for(let j=0; j<3; ++j){
 if(matrix[0][j] ===matrix[1][j] && matrix[1][j] ===matrix[2][j]){
-   result.textContent =matrix[0][j]+ "you won the titile man ";
-   return;
+   announceWinner(matrix[0][j]);
+return;
 }
 
 }
 if(matrix[0][0] ===matrix[1][1] && matrix[1][1] ===matrix[2][2]){
-    result.textContent =matrix[0][0] + "you won the titile man "
+   announceWinner(matrix[0][0]);
     return;
 }
 if(matrix[0][2]  ===matrix[1][1] && matrix[1][1] ===matrix[2][0]){
-    result.textContent =matrix[0][2] +"you won the titile man ";
+      announceWinner( matrix[0][2]);
     return;
 }
-result.textContent = "no yet win";
+result.textContent = "No winner yet — keep playing!";
 });
 
 
