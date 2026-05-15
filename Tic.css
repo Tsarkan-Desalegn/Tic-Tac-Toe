@@ -1,7 +1,6 @@
 *{
     background-color:#0A192F;
 }
-
 .main-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -10,40 +9,17 @@
     box-shadow: 5px 2px 12px 6px black;
     width: 70%;
     height: 70%;
-    
 }
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-input{
+button{
     height: 100%;
     width: 100%;
-    font-size: 5rem;
-    text-align: center;
-    color: aqua;
-    font-weight: bolder;
-    border: 2px solid white;
+    color: white;
 }
 #result{
     grid-column: 1/4;
     color: white;
     font-family: cursive;
     text-align: center;
-}
-
-#btn{
-   grid-column: 2/2;
-   height: 3rem;
-   margin: 1rem;
-   background-color: aqua;
-   border: aqua;
-   border-radius: 2rem;
-   width: 80%;
-   font-size:1.2rem;
-   font-family: cursive;
-   font-weight: bolder;
 }
 .choice{
     display: flex;
@@ -57,4 +33,13 @@ input{
    font-size:1.1rem;
    border-radius: 1rem;
    font-family: cursive;
+}
+.container-btn{
+    font-size: 5rem;
+    color: aqua;
+}
+.result{
+    color: white;
+    text-align: center;
+    font-size: 1.9rem;
 }
