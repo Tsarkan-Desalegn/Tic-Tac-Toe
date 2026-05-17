@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="Tic.css">
+    <script src="Tic.js" defer></script>
       <script type="module" src="/script/main.js"></script>
  
 </head>
 <body>
-  <div class="underlay">
-    <div class="choice">
-        <div> <button class="btn">player vs player</button></div>
-        <div><button class="btn ">player vs computer</button></div>
+  <div class="container">
+    <div class="middle-container">
+       <div class="choice">
+           <div> <button class="btn">player vs player</button></div>
+           <div><button class="btn ">player vs computer</button></div>
     </div>
- <div class="main-container">
+  <div class="main-container">
     <button class="container-btn"  id="first-element"></button>
     <button class="container-btn"  id="second-element"></button>
     <button class="container-btn"  id="third-element"></button>
@@ -25,11 +27,12 @@
     <button class="container-btn"  id="eighth-element"></button>
     <button class="container-btn"  id="nineth-element"></button>
   </div>
+</div>
+ <div class="result-section">
+    <p class="result"></p>
+    <button class="delete">Play again</button>
 
-
-  <p class="result"></p>
-
-
+   </div>
 </div>
 </body>
-</html>
+</html>  
