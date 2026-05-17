@@ -9,7 +9,10 @@ export function winnerCheck(boxes) {
 
   for (let [a,b,c] of winnerPattern) {
     if (array[a] && array[a] === array[b] && array[a] === array[c]) {
-      document.querySelector(".result").textContent = `Winner is of this game is  ${array[a]}.`;
+      
+      document.querySelector(".result").textContent = `🎉 Player ${array[a]} wins the game! 🎉`;
+      document.querySelector(".middle-container").classList.add("show");
+      document.querySelector(".result-section").classList.add("display");
       return true;
     }
   }
