@@ -19,9 +19,9 @@ This project demonstrates DOM manipulation, event handling, and basic game logic
 ## 🚀 How to Run
 1. Clone the repository:bash
   ``` git clone https://github.com/Tsarkan-Desalegn/Tic-Tac-Toe.git```
-2. navigate into project folder:
-    
+2. navigate into project folder:    
 ```  cd Tic-Tac-Toe ```
+
 3. Open index.html in your browser.
 
 ## Technologies Used
