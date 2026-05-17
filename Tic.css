@@ -1,6 +1,10 @@
 *{
     background-color:#0A192F;
 }
+body{
+    display: grid;
+    place-items: center;
+}
 .main-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -24,6 +28,7 @@ button{
 .choice{
     display: flex;
     justify-content: space-around;
+    gap: 6rem;
     
 }
 .btn {
@@ -42,4 +47,37 @@ button{
     color: white;
     text-align: center;
     font-size: 1.9rem;
+    border-radius: 23px ;
+}
+.result-section{
+  opacity: 0;
+
+}
+.result{
+    color: aqua;
+}
+.middle-container.show{
+   opacity: .04;
+}
+.result-section.display{
+   border: none;
+    box-shadow:1px 1px 12px 1000px #bbb5b54f;
+    z-index: 1; 
+    position: fixed;
+    transition: .2s ease;
+    opacity: 1;
+    border-radius: .5rem;
+    top: 40%;
+    color: aqua;
+}
+.delete{
+    font-size: 30px;
+    width: 60%;
+   margin-left: 20%;
+   background-color: rgba(0, 255, 255, 0.701);
+   border: none;
+   border-radius: .6rem;
+   font-family: cursive;
+  
+   
 }
